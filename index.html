@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Interactive Web Page 🚀</h1>
+
+  <!-- Theme Toggle -->
+  <section>
+    <button id="themeToggle">Toggle Light/Dark Mode</button>
+  </section>
+
+  <!-- Counter -->
+  <section>
+    <h2>Click Counter</h2>
+    <p>Clicks: <span id="clickCount">0</span></p>
+    <button id="countBtn">Click Me!</button>
+  </section>
+
+  <!-- FAQ Section -->
+  <section>
+    <h2>FAQ</h2>
+    <div class="faq">
+      <button class="faq-question">What is this site?</button>
+      <div class="faq-answer">This site is a JavaScript demo!</div>
+    </div>
+  </section>
+
+  <!-- Form -->
+  <section>
+    <h2>Sign Up Form</h2>
+    <form id="signupForm" novalidate>
+      <label>
+        Name:
+        <input type="text" id="name" />
+        <small class="error" id="nameError"></small>
+      </label><br />
+
+      <label>
+        Email:
+        <input type="email" id="email" />
+        <small class="error" id="emailError"></small>
+      </label><br />
+
+      <label>
+        Password:
+        <input type="password" id="password" />
+        <small class="error" id="passwordError"></small>
+      </label><br />
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formSuccess" class="success"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
